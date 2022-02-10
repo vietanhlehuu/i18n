@@ -15,9 +15,11 @@ export default function Example() {
                     className="inline-flex items-center text-white bg-gray-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                   >
                     <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full">
-                      We&rsquo;re hiring
+                      <Trans>We&rsquo;re hiring</Trans>
                     </span>
-                    <span className="ml-4 text-sm">Visit our careers page</span>
+                    <span className="ml-4 text-sm">
+                      <Trans>Visit our careers page for another day</Trans>
+                    </span>
                     <ChevronRightIcon
                       className="ml-2 w-5 h-5 text-gray-500"
                       aria-hidden="true"
@@ -32,12 +34,14 @@ export default function Example() {
                     </Trans>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                    occaecat fugiat aliqua ad ad non deserunt sunt.
+                    <Trans>
+                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
+                      irure qui lorem cupidatat commodo. Elit sunt amet fugiat
+                      veniam occaecat fugiat aliqua ad ad non deserunt sunt.
+                    </Trans>
                   </p>
                   <p className="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10">
-                    Used by
+                    <Trans id="homePage.usedByOne">Used by</Trans>
                   </p>
                   <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                     <div className="flex flex-wrap items-start justify-between">

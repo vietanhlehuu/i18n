@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-02-09 22:22+0700\n"
+"POT-Creation-Date: 2022-02-10 15:44+0700\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: vi\n"
 
-#: components/Switcher.tsx:14
-msgid "English"
-msgstr "Tiếng Anh"
+#: pages/index.tsx:4
+msgid "Hello world"
+msgstr ""
 
 #: pages/pricing.tsx:38
 msgid "Pricing"
@@ -19,10 +19,18 @@ msgstr "Giá"
 msgid "The right price for you, whoever you are"
 msgstr "Mức giá phù hợp cho bạn, cho dù bạn là ai"
 
-#: components/Switcher.tsx:15
-msgid "Vietnamese"
-msgstr "Tiếng Việt"
+#: pages/index.tsx:23
+msgid "Visit our careers page for another day"
+msgstr ""
 
-#: pages/index.tsx:29
+#: pages/index.tsx:20
+msgid "We’re hiring"
+msgstr ""
+
+#: pages/index.tsx:44
+msgid "homePage.usedByOne"
+msgstr "Được sử dụng bởi"
+
+#: pages/index.tsx:31
 msgid "homeTitle"
-msgstr "<0> Dữ liệu để làm phong phú thêm</0> <1> kinh doanh trực tuyến</1> <0>của bạn</0>"
+msgstr "<0> Dữ liệu để làm phong phú thêm</0> <1> kinh doanh trực tuyến"

@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Workflow
 
-## Getting Started
+## For developers
 
-First, run the development server:
+### Implement a new feature
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Implement the feature
+- Add `<Trans></Trans>` or `t` for new texts
+- Finish the feature, create PR to `staging` branch
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For usages, find out more here: https://lingui.js.org/tutorials/react-patterns.html
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- That's all
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### For update content for an existing feature
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Only change the text
+- Create PR to `staging` branch
 
-## Learn More
+## For staging maintainers
 
-To learn more about Next.js, take a look at the following resources:
+- Merge `staging` to `i18n` branch
+- Run `yarn sync` to sync all new translation keys
+- Request translators to translate new messages
+- Once translation are done, run `yarn sync` again to sync new translation messages
+- Create PR to `staging`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+--
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- After a period, run `yarn sync-and-purge` to remove unused keys on staging (translation.io)
 
-## Deploy on Vercel
+## For translator
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Access translation.io after receiving request from devs
+- Filter all untranslated messages
+- Translate all those messages
+- Inform devs after done
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## To add new locales
+
+- Add a new locale on translation.io
+- Copy settings to the file config (lingui) in code
+- Run `yarn sync`
