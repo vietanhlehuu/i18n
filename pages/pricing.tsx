@@ -1,4 +1,5 @@
 import { CheckIcon } from "@heroicons/react/outline";
+import { Trans } from "@lingui/macro";
 
 const tiers = [
   {
@@ -34,10 +35,10 @@ export default function Example() {
         <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
             <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
-              Pricing
+              <Trans>Pricing</Trans>
             </h2>
             <p className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-              The right price for you, whoever you are
+              <Trans>The right price for you, whoever you are</Trans>
             </p>
             <p className="text-xl text-gray-300">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum

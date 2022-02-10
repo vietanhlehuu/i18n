@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"English":"English","Pricing":"Pricing","The right price for you, whoever you are":"The right price for you, whoever you are","Vietnamese":"Vietnamese","homeTitle":"<0>Data to enrich your</0> <1>online business</1>"}};

@@ -5,20 +5,31 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export",
+    "extract": "NODE_ENV=development lingui extract",
+    "compile": "lingui compile",
+    "sync": "yarn extract && yarn compile"
   },
   "dependencies": {
     "@headlessui/react": "1.4.3",
     "@heroicons/react": "1.0.5",
+    "@lingui/react": "3.13.2",
     "@tailwindcss/forms": "0.4.0",
+    "make-plural": "7.1.0",
     "next": "12.0.10",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "7.17.2",
+    "@lingui/cli": "3.13.2",
+    "@lingui/loader": "3.13.2",
+    "@lingui/macro": "3.13.2",
     "@types/node": "17.0.16",
     "@types/react": "17.0.39",
     "autoprefixer": "10.4.2",
+    "babel-plugin-macros": "3.1.0",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
     "postcss": "8.4.6",

@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import { ChevronRightIcon } from "@heroicons/react/solid";
+import { Trans } from "@lingui/macro";
 
 export default function Example() {
   return (
@@ -24,10 +24,12 @@ export default function Example() {
                     />
                   </a>
                   <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
-                    <span className="md:block">Data to enrich your</span>{" "}
-                    <span className="text-indigo-400 md:block">
-                      online business
-                    </span>
+                    <Trans id="homeTitle">
+                      <span className="md:block">Data to enrich your</span>{" "}
+                      <span className="text-indigo-400 md:block">
+                        online business
+                      </span>
+                    </Trans>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
