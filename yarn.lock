@@ -365,6 +365,11 @@
     make-plural "^6.2.2"
     messageformat-parser "^4.1.3"
 
+"@lingui/detect-locale@3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@lingui/detect-locale/-/detect-locale-3.13.2.tgz#ba8411170225932d114fd5c1a60b91101accc942"
+  integrity sha512-1fouly1ecq1wCKUGtYgFn0Hdsjuz4bBYxh/oIjrqEeb4+bKdjaHbCT2ypsX7rRxs88yOfOWGUYuuzG0EoJXiSw==
+
 "@lingui/loader@3.13.2":
   version "3.13.2"
   resolved "https://registry.yarnpkg.com/@lingui/loader/-/loader-3.13.2.tgz#699e04256350adb47f6884dd40d6d1a3d2435f34"

@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Switcher } from "./Switcher";
+import LanguageSwitcher from "./LanguageSwitcher";
 import Link from "next/link";
 
 const navigation = [
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="mr-4">
-            <Switcher />
+            <LanguageSwitcher />
           </div>
           <div className="hidden md:flex">
             <a

@@ -14,6 +14,7 @@
   "dependencies": {
     "@headlessui/react": "1.4.3",
     "@heroicons/react": "1.0.5",
+    "@lingui/detect-locale": "3.13.2",
     "@lingui/react": "3.13.2",
     "@tailwindcss/forms": "0.4.0",
     "make-plural": "7.1.0",
