@@ -2,6 +2,8 @@ import React from "react";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import LanguageSwitcher from "./LanguageSwitcher";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -65,15 +67,16 @@ const Header: React.FC = () => {
             </div>
             <div className="hidden space-x-10 md:flex md:ml-10">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="font-medium text-white hover:text-gray-300"
-                >
-                  {item.name}
-                </a>
+                <Link key={item.name} href={item.href}>
+                  <a className="font-medium text-white hover:text-gray-300">
+                    {item.name}
+                  </a>
+                </Link>
               ))}
             </div>
+          </div>
+          <div className="mr-4">
+            <LanguageSwitcher />
           </div>
           <div className="hidden md:flex">
             <a

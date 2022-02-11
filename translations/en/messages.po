@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2022-02-11 14:18+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: pages/index.tsx:27
+msgid "<0>Data to enrich your</0> <1>online business</1>"
+msgstr "<0>Data to enrich your</0> <1>online business</1>"
+
+#: components/LanguageSwitcher.tsx:7
+msgid "English"
+msgstr "English"
+
+#: pages/pricing.tsx:38
+msgid "Pricing"
+msgstr "Pricing"
+
+#: pages/pricing.tsx:41
+msgid "The right price for you, whoever you are"
+msgstr "The right price for you, whoever you are"
+
+#: components/LanguageSwitcher.tsx:8
+msgid "Vietnamese"
+msgstr "Vietnamese"
+
+#: pages/index.tsx:27
+#~ msgid "homeTitle"
+#~ msgstr "<0>Data to enrich your</0> <1>online business</1>"
