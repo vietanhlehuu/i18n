@@ -15,9 +15,11 @@ export default function Example() {
                     className="inline-flex items-center text-white bg-gray-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                   >
                     <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full">
-                      We&rsquo;re hiring
+                      <Trans>We&rsquo;re hiring</Trans>
                     </span>
-                    <span className="ml-4 text-sm">Visit our careers page</span>
+                    <span className="ml-4 text-sm">
+                      <Trans>Visit our careers page</Trans>
+                    </span>
                     <ChevronRightIcon
                       className="ml-2 w-5 h-5 text-gray-500"
                       aria-hidden="true"
@@ -32,12 +34,14 @@ export default function Example() {
                     </Trans>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                    occaecat fugiat aliqua ad ad non deserunt sunt.
+                    <Trans>
+                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
+                      irure qui lorem cupidatat commodo. Elit sunt amet fugiat
+                      veniam occaecat fugiat aliqua ad ad non deserunt sunt.
+                    </Trans>
                   </p>
                   <p className="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10">
-                    Used by
+                    <Trans>Used by</Trans>
                   </p>
                   <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                     <div className="flex flex-wrap items-start justify-between">
@@ -71,7 +75,7 @@ export default function Example() {
                   <div className="px-4 py-8 sm:px-10">
                     <div>
                       <p className="text-sm font-medium text-gray-700">
-                        Sign in with
+                        <Trans>Sign in with</Trans>
                       </p>
 
                       <div className="mt-1 grid grid-cols-3 gap-3">
@@ -81,7 +85,7 @@ export default function Example() {
                             className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                           >
                             <span className="sr-only">
-                              Sign in with Facebook
+                              <Trans>Sign in with Facebook</Trans>
                             </span>
                             <svg
                               className="w-5 h-5"
@@ -104,7 +108,7 @@ export default function Example() {
                             className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                           >
                             <span className="sr-only">
-                              Sign in with Twitter
+                              <Trans>Sign in with Twitter</Trans>
                             </span>
                             <svg
                               className="w-5 h-5"
@@ -122,7 +126,9 @@ export default function Example() {
                             href="#"
                             className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                           >
-                            <span className="sr-only">Sign in with GitHub</span>
+                            <span className="sr-only">
+                              <Trans>Sign in with GitHub</Trans>
+                            </span>
                             <svg
                               className="w-5 h-5"
                               aria-hidden="true"
@@ -156,7 +162,7 @@ export default function Example() {
                       <form action="#" method="POST" className="space-y-6">
                         <div>
                           <label htmlFor="name" className="sr-only">
-                            Full name
+                            <Trans>Full name</Trans>
                           </label>
                           <input
                             type="text"
@@ -171,7 +177,7 @@ export default function Example() {
 
                         <div>
                           <label htmlFor="mobile-or-email" className="sr-only">
-                            Mobile number or email
+                            <Trans>Mobile number or email</Trans>
                           </label>
                           <input
                             type="text"
@@ -186,7 +192,7 @@ export default function Example() {
 
                         <div>
                           <label htmlFor="password" className="sr-only">
-                            Password
+                            <Trans>Password</Trans>
                           </label>
                           <input
                             id="password"
@@ -204,7 +210,7 @@ export default function Example() {
                             type="submit"
                             className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                           >
-                            Create your account
+                            <Trans>Create your account</Trans>
                           </button>
                         </div>
                       </form>
@@ -212,28 +218,30 @@ export default function Example() {
                   </div>
                   <div className="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
                     <p className="text-xs leading-5 text-gray-500">
-                      By signing up, you agree to our{" "}
-                      <a
-                        href="#"
-                        className="font-medium text-gray-900 hover:underline"
-                      >
-                        Terms
-                      </a>
-                      ,{" "}
-                      <a
-                        href="#"
-                        className="font-medium text-gray-900 hover:underline"
-                      >
-                        Data Policy
-                      </a>{" "}
-                      and{" "}
-                      <a
-                        href="#"
-                        className="font-medium text-gray-900 hover:underline"
-                      >
-                        Cookies Policy
-                      </a>
-                      .
+                      <Trans>
+                        By signing up, you agree to our{" "}
+                        <a
+                          href="#"
+                          className="font-medium text-gray-900 hover:underline"
+                        >
+                          Terms
+                        </a>
+                        ,{" "}
+                        <a
+                          href="#"
+                          className="font-medium text-gray-900 hover:underline"
+                        >
+                          Data Policy
+                        </a>{" "}
+                        and{" "}
+                        <a
+                          href="#"
+                          className="font-medium text-gray-900 hover:underline"
+                        >
+                          Cookies Policy
+                        </a>
+                        .
+                      </Trans>
                     </p>
                   </div>
                 </div>

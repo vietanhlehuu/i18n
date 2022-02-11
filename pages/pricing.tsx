@@ -1,29 +1,29 @@
 import { CheckIcon } from "@heroicons/react/outline";
-import { Trans } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 
 const tiers = [
   {
-    name: "Standard",
+    name: t`Standard`,
     href: "#",
     priceMonthly: 49,
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: t`Lorem ipsum dolor sit amet consectetur, adipisicing elit.`,
     features: [
-      "Pariatur quod similique",
-      "Sapiente libero doloribus modi nostrum",
-      "Vel ipsa esse repudiandae excepturi",
-      "Itaque cupiditate adipisci quibusdam",
+      t`Pariatur quod similique`,
+      t`Sapiente libero doloribus modi nostrum`,
+      t`Vel ipsa esse repudiandae excepturi`,
+      t`Itaque cupiditate adipisci quibusdam`,
     ],
   },
   {
-    name: "Enterprise",
+    name: t`Enterprise`,
     href: "#",
     priceMonthly: 79,
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: t`Lorem ipsum dolor sit amet consectetur, adipisicing elit.`,
     features: [
-      "Pariatur quod similique",
-      "Sapiente libero doloribus modi nostrum",
-      "Vel ipsa esse repudiandae excepturi",
-      "Itaque cupiditate adipisci quibusdam",
+      t`Pariatur quod similique`,
+      t`Sapiente libero doloribus modi nostrum`,
+      t`Vel ipsa esse repudiandae excepturi`,
+      t`Itaque cupiditate adipisci quibusdam`,
     ],
   },
 ];
@@ -41,8 +41,10 @@ export default function Example() {
               <Trans>The right price for you, whoever you are</Trans>
             </p>
             <p className="text-xl text-gray-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-              sequi unde repudiandae natus.
+              <Trans>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+                sequi unde repudiandae natus.
+              </Trans>
             </p>
           </div>
         </div>
@@ -98,7 +100,7 @@ export default function Example() {
                         className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900"
                         aria-describedby="tier-standard"
                       >
-                        Get started
+                        <Trans>Get started</Trans>
                       </a>
                     </div>
                   </div>
@@ -113,12 +115,14 @@ export default function Example() {
               <div className="flex-1">
                 <div>
                   <h3 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white text-gray-800">
-                    Discounted
+                    <Trans>Discounted</Trans>
                   </h3>
                 </div>
                 <div className="mt-4 text-lg text-gray-600">
-                  Get full access to all of standard license features for solo
-                  projects that make less than $20k gross revenue for{" "}
+                  <Trans>
+                    Get full access to all of standard license features for solo
+                    projects that make less than $20k gross revenue for
+                  </Trans>{" "}
                   <span className="font-semibold text-gray-900">$29</span>.
                 </div>
               </div>
@@ -127,7 +131,7 @@ export default function Example() {
                   href="#"
                   className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
                 >
-                  Buy Discounted License
+                  <Trans>Buy Discounted License</Trans>
                 </a>
               </div>
             </div>

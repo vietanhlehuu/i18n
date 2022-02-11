@@ -4,10 +4,11 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Link from "next/link";
+import { t, Trans } from "@lingui/macro";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Pricing", href: "/pricing" },
+  { name: t`Home`, href: "/" },
+  { name: t`Pricing`, href: "/pricing" },
 ];
 
 const Header: React.FC = () => {
@@ -51,7 +52,9 @@ const Header: React.FC = () => {
           <div className="flex items-center flex-1">
             <div className="flex items-center justify-between w-full md:w-auto">
               <a href="#">
-                <span className="sr-only">Workflow</span>
+                <span className="sr-only">
+                  <Trans>Workflow</Trans>
+                </span>
                 <img
                   className="h-8 w-auto sm:h-10"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
@@ -60,7 +63,9 @@ const Header: React.FC = () => {
               </a>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
-                  <span className="sr-only">Open main menu</span>
+                  <span className="sr-only">
+                    <Trans>Open main menu</Trans>
+                  </span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
@@ -83,7 +88,7 @@ const Header: React.FC = () => {
               href="#"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
             >
-              Log in
+              <Trans>Log in</Trans>
             </a>
           </div>
         </nav>
@@ -112,7 +117,9 @@ const Header: React.FC = () => {
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span className="sr-only">Close menu</span>
+                    <span className="sr-only">
+                      <Trans>Close menu</Trans>
+                    </span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
@@ -132,7 +139,7 @@ const Header: React.FC = () => {
                 href="#"
                 className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
               >
-                Log in
+                <Trans>Log in</Trans>
               </a>
             </div>
           </Popover.Panel>
