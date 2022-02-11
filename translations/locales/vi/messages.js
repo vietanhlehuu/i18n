@@ -1,1 +1,0 @@
-/*eslint-disable*/module.exports={messages:{"English":"Tiếng Anh","Pricing":"Giá","The right price for you, whoever you are":"Mức giá phù hợp cho bạn, cho dù bạn là ai","Vietnamese":"Tiếng Việt","homeTitle":"<0> Dữ liệu để làm phong phú thêm</0> <1> kinh doanh trực tuyến</1> <0>của bạn</0>"}};

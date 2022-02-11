@@ -2,59 +2,35 @@ import "../styles/globals.css";
 import type { AppContext, AppProps } from "next/app";
 import App from "next/app";
 import Header from "../components/Header";
+import { invalidateLanguage, loadMessages } from "../i18n";
+import { LanguageProvider } from "../context/LanguageContext";
 import { i18n } from "@lingui/core";
-import { initTranslation, loadTranslation } from "../utils";
-import { useRouter } from "next/router";
-import { useEffect, useRef } from "react";
-import { I18nProvider } from "@lingui/react";
 
-//initialization function
-initTranslation(i18n);
-
-const getInitialProps = async (appContext: AppContext) => {
+async function getInitialProps(appContext: AppContext) {
   const appProps = await App.getInitialProps(appContext);
-  const locale = appContext.ctx.locale!;
-  const translation = await loadTranslation(
-    locale,
-    process.env.NODE_ENV === "production"
-  );
+  const locale = invalidateLanguage(appContext.ctx.locale);
 
-  return { ...appProps, translation };
-};
+  // This should run once on the server side the first time the app is loaded.
+  let messages = {};
+  if (!i18n.messages) {
+    messages = (await loadMessages(locale)).messages;
+  }
+
+  return { ...appProps, messages: messages };
+}
 
 function MyApp({
   Component,
   pageProps,
-  translation,
-}: AppProps & Awaited<ReturnType<typeof getInitialProps>>) {
-  const router = useRouter();
-  const locale = router.locale || router.defaultLocale!;
-  const firstRender = useRef(true);
-
-  // run only once on the first render (for server side)
-  if (translation && firstRender.current) {
-    i18n.load(locale, translation);
-    i18n.activate(locale);
-  }
-
-  useEffect(() => {
-    if (translation && !firstRender.current) {
-      i18n.load(locale, translation);
-      i18n.activate(locale);
-    }
-  }, [locale, translation]);
-
-  useEffect(() => {
-    firstRender.current = false;
-  }, []);
-
+  messages,
+}: AppProps & { messages: any }) {
   return (
-    <I18nProvider i18n={i18n}>
+    <LanguageProvider i18n={i18n} messages={messages}>
       <div className="bg-gray-800 ">
         <Header />
         <Component {...pageProps} />
       </div>
-    </I18nProvider>
+    </LanguageProvider>
   );
 }
 

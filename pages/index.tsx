@@ -24,7 +24,7 @@ export default function Example() {
                     />
                   </a>
                   <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
-                    <Trans id="homeTitle">
+                    <Trans>
                       <span className="md:block">Data to enrich your</span>{" "}
                       <span className="text-indigo-400 md:block">
                         online business
