@@ -35,11 +35,14 @@ export const LanguageProvider: React.FC<Props> = ({
     invalidateLanguage(router.locale)
   );
 
-  const handleChangeLanguage = useCallback((language: Language) => {
-    setLocale(language);
-    const { pathname, asPath, query } = router;
-    router.push({ pathname, query }, asPath, { locale: language });
-  }, []);
+  const handleChangeLanguage = useCallback(
+    (language: Language) => {
+      setLocale(language);
+      const { pathname, asPath, query } = router;
+      router.push({ pathname, query }, asPath, { locale: language });
+    },
+    [router]
+  );
 
   useFirstRenderSync(() => {
     dynamicActivate(i18n, locale, messages);
@@ -47,7 +50,7 @@ export const LanguageProvider: React.FC<Props> = ({
 
   useEffect(() => {
     dynamicActivate(i18n, locale);
-  }, [locale]);
+  }, [locale, i18n]);
 
   const value = useMemo(() => {
     return {

@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { t } from "@lingui/macro";
 import { useLanguage } from "../context/LanguageContext";
 import { Language } from "../i18n";
