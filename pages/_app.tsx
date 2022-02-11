@@ -12,10 +12,9 @@ async function getInitialProps(appContext: AppContext) {
 
   // This should run once on the server side the first time the app is loaded.
   let messages = {};
-  if (!i18n.messages) {
+  if (!i18n.messages || Object.keys(i18n.messages).length === 0) {
     messages = (await loadMessages(locale)).messages;
   }
-
   return { ...appProps, messages: messages };
 }
 
@@ -26,7 +25,7 @@ function MyApp({
 }: AppProps & { messages: any }) {
   return (
     <LanguageProvider i18n={i18n} messages={messages}>
-      <div className="bg-gray-800 ">
+      <div className="bg-gray-800 relative isolate">
         <Header />
         <Component {...pageProps} />
       </div>

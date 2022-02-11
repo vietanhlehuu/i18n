@@ -1,34 +1,37 @@
 import { CheckIcon } from "@heroicons/react/outline";
 import { t, Trans } from "@lingui/macro";
-
-const tiers = [
-  {
-    name: t`Standard`,
-    href: "#",
-    priceMonthly: 49,
-    description: t`Lorem ipsum dolor sit amet consectetur, adipisicing elit.`,
-    features: [
-      t`Pariatur quod similique`,
-      t`Sapiente libero doloribus modi nostrum`,
-      t`Vel ipsa esse repudiandae excepturi`,
-      t`Itaque cupiditate adipisci quibusdam`,
-    ],
-  },
-  {
-    name: t`Enterprise`,
-    href: "#",
-    priceMonthly: 79,
-    description: t`Lorem ipsum dolor sit amet consectetur, adipisicing elit.`,
-    features: [
-      t`Pariatur quod similique`,
-      t`Sapiente libero doloribus modi nostrum`,
-      t`Vel ipsa esse repudiandae excepturi`,
-      t`Itaque cupiditate adipisci quibusdam`,
-    ],
-  },
-];
+import { useMemo } from "react";
 
 export default function Example() {
+  const tiers = useMemo(
+    () => [
+      {
+        name: t`Standard`,
+        href: "#",
+        priceMonthly: 49,
+        description: t`Lorem ipsum dolor sit amet consectetur, adipisicing elit.`,
+        features: [
+          t`Pariatur quod similique`,
+          t`Sapiente libero doloribus modi nostrum`,
+          t`Vel ipsa esse repudiandae excepturi`,
+          t`Itaque cupiditate adipisci quibusdam`,
+        ],
+      },
+      {
+        name: t`Enterprise`,
+        href: "#",
+        priceMonthly: 79,
+        description: t`Lorem ipsum dolor sit amet consectetur, adipisicing elit.`,
+        features: [
+          t`Pariatur quod similique`,
+          t`Sapiente libero doloribus modi nostrum`,
+          t`Vel ipsa esse repudiandae excepturi`,
+          t`Itaque cupiditate adipisci quibusdam`,
+        ],
+      },
+    ],
+    []
+  );
   return (
     <div className="bg-gray-800">
       <div className="pt-12 sm:pt-16 lg:pt-24">

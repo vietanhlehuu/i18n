@@ -29,7 +29,7 @@ msgstr "<0>Dữ liệu làm phong phú</0> <1>kinh doanh trực tuyến</1>"
 msgid "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt."
 msgstr ""
 
-#: pages/pricing.tsx:134
+#: pages/pricing.tsx:137
 msgid "Buy Discounted License"
 msgstr "Mua giấy phép giảm giá"
 
@@ -37,7 +37,7 @@ msgstr "Mua giấy phép giảm giá"
 msgid "By signing up, you agree to our <0>Terms</0>, <1>Data Policy</1> and <2>Cookies Policy</2>."
 msgstr "Bằng cách đăng ký, bạn đồng ý với <0>Điều khoản</0>, <1>Chính sách dữ liệu</1> và <2>Chính sách cookies</2> của chúng tôi."
 
-#: components/Header.tsx:121
+#: components/Header.tsx:124
 msgid "Close menu"
 msgstr "Đóng menu"
 
@@ -45,77 +45,84 @@ msgstr "Đóng menu"
 msgid "Create your account"
 msgstr "Tạo tài khoản"
 
-#: pages/pricing.tsx:118
+#: pages/pricing.tsx:121
 msgid "Discounted"
 msgstr "Giảm giá"
 
-#: components/LanguageSwitcher.tsx:6
+#: components/LanguageSwitcher.tsx:9
 msgid "English"
 msgstr "Tiếng Anh"
 
-#: pages/pricing.tsx:18
+#: pages/pricing.tsx:21
 msgid "Enterprise"
 msgstr "Doanh nghiệp"
 
 #: pages/index.tsx:165
+#: pages/index.tsx:172
 msgid "Full name"
 msgstr "Họ và tên"
 
-#: pages/pricing.tsx:122
+#: pages/pricing.tsx:125
 msgid "Get full access to all of standard license features for solo projects that make less than $20k gross revenue for"
 msgstr "Nhận được toàn quyền truy cập tất cả các tính năng giấy phép chuẩn cho các dự án chỉ có thu nhập thực tế ít hơn $20k cho"
 
-#: pages/pricing.tsx:103
+#: pages/pricing.tsx:106
 msgid "Get started"
 msgstr "Bắt đầu"
 
-#: components/Header.tsx:10
+#: components/Header.tsx:12
 msgid "Home"
 msgstr "Trang chủ"
 
-#: pages/pricing.tsx:14
-#: pages/pricing.tsx:26
+#: pages/pricing.tsx:17
+#: pages/pricing.tsx:29
 msgid "Itaque cupiditate adipisci quibusdam"
 msgstr ""
 
-#: components/Header.tsx:91
-#: components/Header.tsx:142
+#: components/Header.tsx:94
+#: components/Header.tsx:145
 msgid "Log in"
 msgstr "Đăng nhập"
 
-#: pages/pricing.tsx:9
-#: pages/pricing.tsx:21
+#: pages/pricing.tsx:12
+#: pages/pricing.tsx:24
 msgid "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
 msgstr ""
 
-#: pages/pricing.tsx:44
+#: pages/pricing.tsx:47
 msgid "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus."
 msgstr ""
 
 #: pages/index.tsx:180
+#: pages/index.tsx:187
 msgid "Mobile number or email"
 msgstr "Số điện thoại hoặc email"
 
-#: components/Header.tsx:67
+#: components/Header.tsx:70
 msgid "Open main menu"
 msgstr "Mở menu chính"
 
-#: pages/pricing.tsx:11
-#: pages/pricing.tsx:23
+#: pages/pricing.tsx:14
+#: pages/pricing.tsx:26
 msgid "Pariatur quod similique"
 msgstr ""
 
 #: pages/index.tsx:195
+#: pages/index.tsx:201
 msgid "Password"
 msgstr "Mật khẩu"
 
-#: components/Header.tsx:11
-#: pages/pricing.tsx:38
+#: components/Header.tsx:13
+#: pages/pricing.tsx:41
 msgid "Pricing"
 msgstr "Giá"
 
-#: pages/pricing.tsx:12
-#: pages/pricing.tsx:24
+#: pages/pricing.tsx:32
+#~ msgid "Running out of space?"
+#~ msgstr "Chay duoc alert ne"
+
+#: pages/pricing.tsx:15
+#: pages/pricing.tsx:27
 msgid "Sapiente libero doloribus modi nostrum"
 msgstr ""
 
@@ -135,11 +142,11 @@ msgstr "Đăng nhập bằng GitHub"
 msgid "Sign in with Twitter"
 msgstr "Đăng nhập bằng Twitter"
 
-#: pages/pricing.tsx:6
+#: pages/pricing.tsx:9
 msgid "Standard"
 msgstr "Chuẩn"
 
-#: pages/pricing.tsx:41
+#: pages/pricing.tsx:44
 msgid "The right price for you, whoever you are"
 msgstr "Đúng giá cho bạn, dù bạn có nghèo"
 
@@ -147,12 +154,12 @@ msgstr "Đúng giá cho bạn, dù bạn có nghèo"
 msgid "Used by"
 msgstr "Sử dụng bởi"
 
-#: pages/pricing.tsx:13
-#: pages/pricing.tsx:25
+#: pages/pricing.tsx:16
+#: pages/pricing.tsx:28
 msgid "Vel ipsa esse repudiandae excepturi"
 msgstr ""
 
-#: components/LanguageSwitcher.tsx:7
+#: components/LanguageSwitcher.tsx:10
 msgid "Vietnamese"
 msgstr "Tiếng Việt"
 
@@ -164,7 +171,7 @@ msgstr "Xem trang tuyển dụng"
 msgid "We’re hiring"
 msgstr "Chúng tôi đang tuyển dụng"
 
-#: components/Header.tsx:56
+#: components/Header.tsx:59
 msgid "Workflow"
 msgstr "Quy trình làm việc"
 

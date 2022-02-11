@@ -2,13 +2,13 @@ import { t } from "@lingui/macro";
 import { useLanguage } from "../context/LanguageContext";
 import { Language } from "../i18n";
 
-const languages: { [k in Language]: string } = {
-  en: t`English`,
-  vi: t`Vietnamese`,
-};
-
 export default function LangSwitcher() {
   const { language, changeLanguage } = useLanguage();
+
+  const languages: { [k in Language]: string } = {
+    en: t`English`,
+    vi: t`Vietnamese`,
+  };
 
   const handleChangeLanguage = (
     event: React.ChangeEvent<HTMLSelectElement>

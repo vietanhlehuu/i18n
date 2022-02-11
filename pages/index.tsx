@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from "@heroicons/react/solid";
-import { Trans } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 
 export default function Example() {
   return (
@@ -18,7 +18,7 @@ export default function Example() {
                       <Trans>We&rsquo;re hiring</Trans>
                     </span>
                     <span className="ml-4 text-sm">
-                      <Trans>Visit our careers page</Trans>
+                      {t`Visit our careers page`}
                     </span>
                     <ChevronRightIcon
                       className="ml-2 w-5 h-5 text-gray-500"
@@ -169,7 +169,7 @@ export default function Example() {
                             name="name"
                             id="name"
                             autoComplete="name"
-                            placeholder="Full name"
+                            placeholder={t`Full name`}
                             required
                             className="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
                           />
@@ -184,7 +184,7 @@ export default function Example() {
                             name="mobile-or-email"
                             id="mobile-or-email"
                             autoComplete="email"
-                            placeholder="Mobile number or email"
+                            placeholder={t`Mobile number or email`}
                             required
                             className="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
                           />
@@ -198,7 +198,7 @@ export default function Example() {
                             id="password"
                             name="password"
                             type="password"
-                            placeholder="Password"
+                            placeholder={t`Password`}
                             autoComplete="current-password"
                             required
                             className="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"

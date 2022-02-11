@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -6,16 +6,19 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Link from "next/link";
 import { t, Trans } from "@lingui/macro";
 
-const navigation = [
-  { name: t`Home`, href: "/" },
-  { name: t`Pricing`, href: "/pricing" },
-];
-
 const Header: React.FC = () => {
+  const navigation = useMemo(
+    () => [
+      { name: t`Home`, href: "/" },
+      { name: t`Pricing`, href: "/pricing" },
+    ],
+    []
+  );
+
   return (
     <header>
       <div
-        className="hidden sm:block sm:absolute sm:inset-0"
+        className="hidden sm:block sm:absolute sm:inset-0 z-[-1]"
         aria-hidden="true"
       >
         <svg
