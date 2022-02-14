@@ -11,8 +11,12 @@ async function getInitialProps(appContext: AppContext) {
   const locale = invalidateLanguage(appContext.ctx.locale);
 
   // This should run once on the server side the first time the app is loaded.
-  let messages = {};
-  if (!i18n.messages || Object.keys(i18n.messages).length === 0) {
+  let messages = i18n.messages;
+  if (
+    !messages ||
+    Object.keys(messages).length === 0 ||
+    i18n.locale !== locale
+  ) {
     messages = (await loadMessages(locale)).messages;
   }
   return { ...appProps, messages: messages };

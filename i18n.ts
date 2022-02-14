@@ -32,7 +32,7 @@ export const dynamicActivate = async (
   locale: string,
   messages?: any
 ) => {
-  if (i18n.locale === locale) {
+  if (i18n.locale === locale && !messages) {
     return;
   }
 
